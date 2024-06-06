@@ -17,11 +17,6 @@ class _QuestionsState extends State<Questions> {
     widget.chooseAnswers(answer);
     setState(() {
       currQuestIndex++;
-      if (currQuestIndex >= questions.length) {
-        setState(() {
-          currQuestIndex = 0;
-        });
-      }
     });
   }
 
